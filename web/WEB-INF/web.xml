@@ -3,4 +3,44 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
+    <display-name>Sda Servlet App</display-name>
+    <welcome-file-list>
+        <welcome-file>/jsp/index2.jsp</welcome-file>
+    </welcome-file-list>
+    <servlet>
+        <servlet-name>SdaServlet</servlet-name>
+        <servlet-class>groupID.SdaServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SdaServlet</servlet-name>
+        <url-pattern>/greeter</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Index2</servlet-name>
+        <jsp-file>/jsp/index2.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Index2</servlet-name>
+        <url-pattern>/index2.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Login</servlet-name>
+        <jsp-file>/jsp/login.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Login</servlet-name>
+        <url-pattern>/login.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Register</servlet-name>
+        <jsp-file>/jsp/register.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Register</servlet-name>
+        <url-pattern>/register.jsp</url-pattern>
+    </servlet-mapping>
 </web-app>
