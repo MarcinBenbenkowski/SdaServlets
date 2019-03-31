@@ -11,8 +11,9 @@ public class SdaServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
         resp.setContentType("text/html");
-        PrintWriter out = resp.getWriter();
-        out.println("<h1>Hello SDA!</h1>");
+        PrintWriter write = resp.getWriter();
+        write.println("<h1>Hello</h1>");
     }
 }

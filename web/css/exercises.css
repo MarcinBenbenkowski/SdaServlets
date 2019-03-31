@@ -1,0 +1,10 @@
+body {
+    background-color: lawngreen;
+}
+#header-div {
+    background-color: green;
+    color: orange;
+    font: caption;
+    font-size: 50px;
+    border: aquamarine;
+}

@@ -2,19 +2,15 @@
   Created by IntelliJ IDEA.
   User: marci
   Date: 2019-03-24
-  Time: 10:29
+  Time: 13:50
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Register</title>
+    <title>Register error</title>
 </head>
 <body>
-<form action="registerActionDemo" method="get">
-    Login: <input name="login" type="text"><br>
-    Password: <input name="password" type="password"><br>
-    <input type="submit">
-</form>
+Incorrect user name or password. Please try again.
 </body>
 </html>

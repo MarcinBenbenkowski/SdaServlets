@@ -4,9 +4,11 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
     <display-name>Sda Servlet App</display-name>
+
     <welcome-file-list>
         <welcome-file>/jsp/index2.jsp</welcome-file>
     </welcome-file-list>
+
     <servlet>
         <servlet-name>SdaServlet</servlet-name>
         <servlet-class>groupID.SdaServlet</servlet-class>
@@ -43,4 +45,38 @@
         <servlet-name>Register</servlet-name>
         <url-pattern>/register.jsp</url-pattern>
     </servlet-mapping>
+    <error-page>
+        <exception-type>service.UserRegisterException</exception-type>
+        <location>/jsp/registerError.jsp</location>
+    </error-page>
+
+
+    <servlet>
+        <servlet-name>ExercisesDemoJsp</servlet-name>
+        <jsp-file>/jsp/exercisesJspDemo</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ExercisesDemoJsp</servlet-name>
+        <url-pattern>/exercisesJspDemo</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ExercisesDemoJsp2</servlet-name>
+        <jsp-file>/jsp/exercisesJspDemo2</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ExercisesDemoJsp2</servlet-name>
+        <url-pattern>/exercisesJspDemo2</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ExercisesDemoJsp3</servlet-name>
+        <jsp-file>/jsp/exercisesJspDemo3</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ExercisesDemoJsp3</servlet-name>
+        <url-pattern>/exercisesJspDemo3</url-pattern>
+    </servlet-mapping>
+
+
 </web-app>
