@@ -6,7 +6,7 @@
     <display-name>Sda Servlet App</display-name>
 
     <welcome-file-list>
-        <welcome-file>/jsp/index2.jsp</welcome-file>
+        <welcome-file>/jsp/login3.jsp</welcome-file>
     </welcome-file-list>
 
     <servlet>
@@ -78,5 +78,22 @@
         <url-pattern>/exercisesJspDemo3</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>ErrorLoginPage</servlet-name>
+        <jsp-file>/jsp/errorLoginPage.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ErrorLoginPage</servlet-name>
+        <url-pattern>/errorLoginPage.jsp</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Posts</servlet-name>
+        <jsp-file>/jsp/posts.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Posts</servlet-name>
+        <url-pattern>/secret/posts.jsp</url-pattern>
+    </servlet-mapping>
 
 </web-app>

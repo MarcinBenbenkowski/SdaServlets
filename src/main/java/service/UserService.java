@@ -27,6 +27,7 @@ public class UserService {
     }
 
     public Optional<User> getUserByLogin(String login){
+
         return userDAO.getUserByLogin(login);
     }
 }

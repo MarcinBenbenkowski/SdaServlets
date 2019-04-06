@@ -1,0 +1,20 @@
+body{
+    background-color: #e6d473;
+}
+#pageFooterDiv{
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffcf3d;
+    border: 1px #ffcc65;
+}
+#pageHeaderDiv{
+    text-align: center;
+
+}
+#loginFormDiv{
+    margin: 40px;
+    padding: 20px;
+    border-style: solid;
+    border-color: black;
+    background-color: orange;
+}

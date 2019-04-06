@@ -18,7 +18,6 @@ public class LevelsDemo extends HttpServlet {
 
         HttpSession session = req.getSession();
 
-
         PrintWriter writer = resp.getWriter();
 
         writer.write(requestParameter);
